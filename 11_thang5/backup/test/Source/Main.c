@@ -1,13 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-// #include "/home/phuc/phuc_coder/code_test/make_file/test/Include/Linked_List/linkedlist.h"
-// #include "/home/phuc/phuc_coder/code_test/make_file/test/Include/Queue/queue.h"
-// #include "/home/phuc/phuc_coder/code_test/make_file/test/Include/Stack/stack.h"
-
-// #include "C:\Users\LENOVO\Downloads\test\Include\Linked_List\linkedlist.h"
-//#include "C:\Users\LENOVO\Downloads\test\Include\Queue\queue.h"
-#include "C:\Users\LENOVO\Downloads\test\Include\Stack\stack.h"
-
+#include "./Stack/stack.h"
 
 // struct Stack
 // {
@@ -15,7 +8,6 @@
 //     struct Stack *next;
 // };
 // typedef struct Stack *node;
-
 
 int main(){
     

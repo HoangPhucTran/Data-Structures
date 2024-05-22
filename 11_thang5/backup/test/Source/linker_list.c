@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
-// #include "/home/phuc/phuc_coder/code_test/make_file/test/Include/Linked_List/linkedlist.h"
-#include "C:\Users\LENOVO\Downloads\test\Include\Linked_List\linkedlist.h"
+#include "./linker_list/linkedlist.h"
 
 
 linker Create_node_linkerlist(int value){

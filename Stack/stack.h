@@ -1,7 +1,4 @@
 // stack.h
-
-//tao cau truc stack duung struct
-
 struct Stack
 {
     int top;

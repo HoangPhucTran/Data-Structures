@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include "queue.h"
 
-
 node Create_node(int value){
     node temp;
     temp =(node)malloc(sizeof(struct queue));
@@ -28,7 +27,7 @@ int getsize(node front){
 node remove_front(node front){
     if (front == NULL)
     {
-        printf("Queue list rong, khong co gi de xoa ");
+        printf("QUEUE LIST IS EMPTY, NO DATA TO DELETEE");
     }
     else{
 
@@ -82,12 +81,12 @@ node Input(){
     front = init(front);
     int n, value;
     do{
-        printf("\nNhap so luong phan tu n = ");
+        printf("\nINPUT QUANTITY OF ELEMENT = ");
         scanf("%d", &n);
     }while(n <= 0);
     int i;
     for(i = 0; i < n; ++i){
-        printf("\nNhap gia tri can them: ");
+        printf("\nINPUT VALUE:");
         scanf("%d", &value);
         front = add_rear(front, value);
     }
@@ -108,34 +107,12 @@ int main(){
     for(i = 0; i < 10; ++i){
         front = add_rear(front, i);
     }
-    // node front;
-    // front = Input();
-    // printf(" stack dang co ");
-    // printf_stack(front);
 
     printf("\nGET SIZE ");
     int a = getsize(front);
     printf("%d", a);
 
-    // printf("\n==Xoa phan tu dau==  ");
-    // front = remove_front(front);
-    // printf_stack(front);
-
-    // printf("\n==Thu them 1 phan tu vao linked list==");
-    // int c;
-    // printf("\n==Nhap gia tri can them=  ");  
-    // scanf("%d",&c); 
-    // front = add_rear(front,c);
-    // printf_stack(front);
-
-    // printf("\n==Nhap tri so can tim==");
-    // int e;
-    // scanf("%d",&e);
-    // printf("\n==Thu tim kiem 1 phan tu trong linked list==");
-    // int index = SearchValueAndReturnAtIndex(front, e);
-    // printf("\nTim thay tai chi so %d", index);
-
-    printf("\n==clear clear all==");
+    printf("\nCLEAR ALL");
     front= ClearAll(front);
     printf_stack(front);
     return 0;

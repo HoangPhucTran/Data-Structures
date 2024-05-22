@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-// #include "/home/phuc/phuc_coder/code_test/make_file/test/Include/Queue/queue.h"
-#include "C:\Users\LENOVO\Downloads\test\Include\Queue\queue.h"
 
+#include "../Queue/queue.h"
 
 QUEUE Create_node_queue(int value){
     QUEUE temp;
@@ -29,7 +28,7 @@ int getsize_queue(QUEUE front){
 QUEUE remove_front_queue(QUEUE front){
     if (front == NULL)
     {
-        printf("Queue list rong, khong co gi de xoa ");
+        printf("NO DATA TO DELETE");
     }
     else{
 
@@ -83,12 +82,12 @@ QUEUE Input_queue(){
     front = init_queue(front);
     int n, value;
     do{
-        printf("\nNhap so luong phan tu n = ");
+        printf("\nINPUT QUANTITY OF ELEMENT = ");
         scanf("%d", &n);
     }while(n <= 0);
     int i;
     for(i = 0; i < n; ++i){
-        printf("\nNhap gia tri can them: ");
+        printf("\nINPUT VALUE:");
         scanf("%d", &value);
         front = add_rear_queue(front, value);
     }

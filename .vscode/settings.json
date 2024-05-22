@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "queue.h": "c",
-        "linkedlist.h": "c",
-        "stack.h": "c"
-    }
-}

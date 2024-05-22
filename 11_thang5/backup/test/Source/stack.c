@@ -1,10 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-// #include "/home/phuc/phuc_coder/code_test/make_file/test/Include/Stack/stack.h"
-#include "C:\Users\LENOVO\Downloads\test\Include\Stack\stack.h"
-
-
-
+#include "../Stack/stack.h"
 
 node Create_stack(int value){
     node temp;
@@ -32,7 +28,7 @@ int getsize_stack(node stack){
 node remove_top_stack(node top){
     if (top == NULL)
     {
-        printf("linker list rong, khong co gi de xoa ");
+        printf("NO DATA TO DELETE");
     }
     else{
 
@@ -161,12 +157,12 @@ node Input_stack(){
     node head = init_stack();
     int n, value;
     do{
-        printf("\nNhap so luong phan tu n = ");
+        printf("\nINPUT QUANTITY OF ELEMENT = ");
         scanf("%d", &n);
     }while(n <= 0);
     int i;
     for(i = 0; i < n; ++i){
-        printf("\nNhap gia tri can them: ");
+        printf("\nINPUT VALUE:");
         scanf("%d", &value);
         head = add_tail_stack(head, value);
     }

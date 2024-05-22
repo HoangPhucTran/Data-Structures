@@ -1,7 +1,5 @@
 //  linkedlist.h
 
-// tao linker list dung struct
-
 struct Linker_list
 {
     int data;
